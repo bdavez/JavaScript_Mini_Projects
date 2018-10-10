@@ -46,3 +46,4 @@ for (var q = 0; q < movies.length; q++) {
     console.log("I give " + movie.name +" "+ movie.rating + " stars.")
 }
 
+console.log('----------------------------------------------');
