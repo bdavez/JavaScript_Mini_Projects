@@ -45,8 +45,6 @@ function attribute (quote, author){
 console.log (attribute("The key to being a successful programmer is to learn how to learn.", "- Shannon Burns"));
 
 
-attribute();
-
 //5. Create a function `sumOfNumbers` that takes 2 numbers and returns the sum of those numbers.
 
 function sumOfNumbers (num1, num2) {
@@ -68,7 +66,6 @@ function sumOfLowNumbers (num1, num2, num3, num4, num5) {
 
 console.log (sumOfLowNumbers (21,5,6,5,21));
 
-sumOfNumbers();
 
 
 //7. Go to https://pages.github.com/ and read through the tutorial to create a Github page.
