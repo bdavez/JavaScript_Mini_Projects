@@ -104,7 +104,7 @@ console.log(shapes);
 //The triangle should have a `base` of 33 and a `height` of 44.
 //console.log the updated shapes array
 
-var triangle  = {base: 33, height: 44};
+var triangle  = {base: 33, height: 44}
 
 shapes.push (triangle);
 
@@ -116,4 +116,3 @@ console.log(shapes);
 
 // hypotenuse = the square root of (a^2 + b^2)
 // use the Math.sqrt() function and the .pow() function
-
