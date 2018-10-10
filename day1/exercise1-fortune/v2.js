@@ -8,14 +8,15 @@ function tellFortune(children, partner, place, job) {
 }
 
 function explainFortune() {
-    
-    if (partner === "") {
+    var random = Math.floor(Math.random() * 3);
+    console.log(random);
+    if (random === 1) {
         alert(tellFortune(4, 'Cameron', 'Vancouver', 'Engineer'));
     }
-    else if (partner === "Cameron") {
+    else if (random === 0) {
         alert(tellFortune(3, 'Avery', 'Calgary', 'Web Developer'));
     }
-    else if (partner === "Avery") {
-        alert(tellFortune(3, 'Marley', 'Toronto', 'Car Salesman'));
-    }
+    else if (random === 2) {
+        alert(tellFortune(1, 'Marley', 'Toronto', 'Car Salesman'));
+    } 
 }
