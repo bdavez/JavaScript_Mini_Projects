@@ -1,5 +1,5 @@
 var children = 3;
-var partner = prompt('what is your name?');
+var partner = prompt('what is your partners name?');
 var place = prompt('Where do you live?')
 var job = prompt('What is your Job?')
 
