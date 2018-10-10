@@ -17,6 +17,6 @@ function explainFortune() {
         alert(tellFortune(3, 'Avery', 'Calgary', 'Web Developer'));
     }
     else if (random === 2) {
-        alert(tellFortune(1, 'Marley', 'Toronto', 'Car Salesman'));
+        alert(tellFortune(2, 'Marley', 'Toronto', 'Car Salesman'));
     } 
 }
