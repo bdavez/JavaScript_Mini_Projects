@@ -2,12 +2,14 @@ var pageBody = document.getElementsByTagName('body')[0];
 
 if(Modernizr.geolocation)
     {
+    document.getElementById("geoConfirm").innerHTML = "This will work on this browser!";
     var newImg = document.createElement('img');
     newImg.src = 'http://placekitten.com/g/400/400';
     newImg.style.border = '1px solid black';
     pageBody.appendChild(newImg);
     }
     else{
+    document.getElementById("geoConfirm").innerHTML = "This will not work on this browser";
     var newImgz = document.createElement('img');
     newImgz.src = 'http://www.placepuppy.net/400/250';
     newImgz.style.border = '1px solid black';
