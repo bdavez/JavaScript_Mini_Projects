@@ -82,13 +82,15 @@ console.log(rect.width * rect.height);
 //  `radius` equal to the LAST value in the (sorted) `numbers` array.
 //console.log the circle
 
+numbers.sort()
+
 var circle = {
     cx: 34,
     cy: 43,
-    radius: 10
-}
+    radius: numbers.pop()
+};
 
-console.log(circle)
+console.log(circle);
 
 //10. Create an array `shapes` that represents a list of shapes. The array should contain the rectangle and the circle objects defined above.
 //console.log the variable. Be sure to inspect it in the developer console!
@@ -96,7 +98,7 @@ console.log(circle)
 var shapes = [
     circle,
     rect,
-]
+];
 
 console.log(shapes);
 
@@ -116,3 +118,11 @@ console.log(shapes);
 
 // hypotenuse = the square root of (a^2 + b^2)
 // use the Math.sqrt() function and the .pow() function
+
+var tb = Math.pow(triangle.base, 2); 
+var th = Math.pow(triangle.height, 2);
+var hp = Math.sqrt(tb + th);
+
+triangle.hypotenuse = hp;
+
+console.log(shapes);
