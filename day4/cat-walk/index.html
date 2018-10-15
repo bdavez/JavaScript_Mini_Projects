@@ -17,10 +17,12 @@
 
         if (walkForwards && (currentLeft > (window.innerWidth-img.width))) {
           walkForwards = false;
+          img.style.transform = "scaleX(-1)";
         }
 
         if (!walkForwards && (currentLeft <= 0)) {
           walkForwards = true;
+          img.style.transform = "scaleX(1)";
         }
 
         if (walkForwards) {

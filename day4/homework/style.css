@@ -6,7 +6,36 @@ header h1 {
     text-align: center;
 }
 
+.container {
+    background: linear-gradient(#a3a4a73a, #8a878779, transparent), url(./img/img1.jpg) center center no-repeat;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main {
+    text-align: center;
+    font-size: 30px;
+    transition: 0.6s;
+    z-index: 10;
+    font-family: 'Righteous', cursive;
+}
+
 .buttons {
     display: flex;
     justify-content: space-around;
+    width: 100%;
+}
+
+.buttons button {
+    background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }

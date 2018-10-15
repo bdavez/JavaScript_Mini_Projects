@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Quote Machine</title>
 </head>
@@ -14,12 +15,15 @@
             <hr>
     </header>
 
-    <div class="main"></div>
-
+    <div class="container">
+    <div id="main"></div>
     <div class="buttons">
-        <button>Back</button>
-        <button>Forward</button>
+        <button id="backB" onclick="back()">Back</button>
+        <button id="forwawrdB" onclick="loop()">Forward</button>
     </div>
+    </div>
+
+
 
     <script src="./script.js"></script>
 </body>
