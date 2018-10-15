@@ -15,7 +15,6 @@ var quote = 0;
     quote = quotes[i];
     main.innerHTML = quote;
     i++;
-    console.log(i);
 }
 else {
     i = 0;
@@ -40,7 +39,6 @@ function back() {
         i--;
         quote = quotes[i];
         main.innerHTML = quote;
-        console.log(i);
     }
 }
 
