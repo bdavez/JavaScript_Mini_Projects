@@ -39,3 +39,7 @@ header h1 {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.buttons button:hover {
+    background-color: black;
+}
