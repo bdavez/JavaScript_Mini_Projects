@@ -1,0 +1,16 @@
+
+.span3 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.span3 ul li {
+    width: 100%;
+}
+
+.span3 ul li a {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Color Palette Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Color Palette Generator</h1>
+        <form action="#" name="myform">
+            <div class="row">
+                <div class="col-25">
+                    <label for="cNumber">Number of Colors</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="cNumber" name="cNumber">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="hue">Choose Hue</label>
+                </div>
+                <div class="col-75">
+                    <select name="hue" id="hue">
+                        <option value="random" selected>Random</option>
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="grey">Grey</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="luminosity">Choose Luminosity</label>
+                </div>
+                <div class="col-75">
+                    <select name="hue" id="hue">
+                        <option value="random" selected>Random</option>
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <input type="submit" value="Add Color" name="submit">
+                <input type="button" id="reset" value="Reset" name="reset">
+            </div>
+        </form>
+
+        <div id="mainContent"></div>
+    </div>
+
+
+    <script src="./js/randomColor.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
