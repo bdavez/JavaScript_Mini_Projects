@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Lyric Grabber</title>
+</head>
+
+<body>
+
+    <h1>Lyric Grabber</h1>
+    <p>Example - Artist: Coldplay, Song: Adventure of a lifetime </p>
+    <div class="container">
+        <form action="#" name="myform">
+            <div class="row">
+
+                <div class="col-25">
+                    <label for="artist">Artist</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="artist" name="artist" placeholder="Artist name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="song">Title of Song</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="song" name="song" placeholder="Song name...">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <input type="submit" value="Submit" name="submit">
+            </div>
+        </form>
+        <div class="main">
+            <div id="lyricContent"></div>
+        </div>
+    </div>
+    <div id="errorz"><div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
