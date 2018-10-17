@@ -11,7 +11,6 @@ var song = document.myform["song"].value;
 
 getLyrics(name, song)
 
-
 })
 
 
