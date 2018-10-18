@@ -1,6 +1,7 @@
 var resetButton = document.myform.reset;
 var submitButton = document.myform.submit;
 var lyricContent = document.getElementById('lyricContent');
+var container2 = document.getElementsByClassName('container2');
 var error = document.getElementById('errorz')
 submitButton.addEventListener("click", function(event) {
 
@@ -27,9 +28,11 @@ fetch('https://api.lyrics.ovh/v1/'+name+'/'+song)
     console.log(lyricContent);
     errorz.innerHTML = "";
     lyricContent.innerHTML = data.lyrics;
+    lyricContent.style.padding = "50px";
     
     })
     .catch(function(error) {
+    lyricContent.style.padding = "0";
     lyricContent.innerHTML = ""
     errorz.innerHTML = error;
     })
