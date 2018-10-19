@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Part 5</title>
+</head>
+<body>
+    
+<div id="target"></div>
+
+<script>
+//Template Literals
+const student = {
+name: 'Jane Doe',
+city: 'Calgary'
+};
+
+let message = `Hello ${student.name} from ${student.city}`;
+console.log(message)
+
+// DESTRUCTURING AN OBJECT
+
+const car = {
+type: 'Toyota',
+color: 'silver',
+model: 2007
+};
+const {type, color, model} = car;
+console.log(type, color, model); // Toyota silver 2007
+
+// DESTRUCTURE Objects Activity
+const myEmployee = {
+active: true,
+department: 'Engineering'
+};
+
+const {active, department} = myEmployee;
+console.log("Is myEmployee active?" + active);
+
+</script>
+    
+</body>
+</html>

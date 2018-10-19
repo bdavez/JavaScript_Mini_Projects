@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Part-6</title>
+</head>
+<body>
+    
+
+<script>
+// Original 
+// var names = ['Morgan', 'Taylor', 'Lesley'];
+// for (var i = 0; i < names.length; i++) {
+// console.log(names[i]);
+// }
+
+// For Each 
+const names = ['Morgan', 'Taylor', 'Lesley'];
+names.forEach((name, index, array) => {
+console.log(name);
+});
+
+// For Each Activity 
+const trips = [
+{ mph: 10, hours: 3 },
+{ mph: 30, hours: 2 },
+{ mph: 25, hours: 4 }
+];
+trips.forEach((trip,index,array) => {
+    console.log(trip.mph * trip.hours);
+})
+
+// Every and Some Activity
+const availableLaptops = [
+{ name: 'MacBook', RAM: 8 },
+{ name: 'Asus', RAM: 32 },
+{ name: 'Lenovo', RAM: 16 },
+{ name: 'HP', RAM: 4 }
+];
+
+const all16GB = availableLaptops.every(laptop => laptop.RAM >=16);
+console.log(all16GB)
+
+const some16GB = availableLaptops.some(laptop => laptop.RAM >=16);
+console.log(some16GB)
+
+// Filter 
+const users = [
+{ username: 'ryan10', active: true },
+{ username: 'morgan', active: false }
+];
+const activeUsers = users.filter(user => user.active);
+console.log(activeUsers);
+
+// Filter Activity 
+// Create an array of groceries
+const groceries = [
+{ name: 'bananas', aisle: 'produce', price: 2 },
+{ name: 'flour', aisle: 'baking', price: 5 },
+{ name: 'avocados', aisle: 'produce', price: 4},
+{ name: 'lettuce', aisle: 'produce', price: 5 },
+{ name: 'olive oil', aisle: 'baking', price: 10 },
+{ name: 'shampoo', aisle: 'beauty', price: 12 }
+];
+const produceLessThan5 = groceries.filter(produce => produce.aisle ==="produce" && produce.price < 5); // your code here
+// Output the produce
+console.log(produceLessThan5);
+</script>
+</body>
+</html>

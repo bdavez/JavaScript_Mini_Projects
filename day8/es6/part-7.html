@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Part 7</title>
+</head>
+
+<body>
+
+
+    <script>
+// map
+const numbers = [2, 6, 10];
+const halvedNumbers = numbers.map(number => number / 2);
+console.log(halvedNumbers); // 1, 3, 5
+
+// map Activity
+const trips = [
+{ miles: 5, hours: 1},
+{ miles: 6, hours: 0.5},
+{ miles: 4, hours: 2 }
+];
+const speeds = trips.map(speed => speed.miles / speed.hours); // your code here
+// Output the speeds
+console.log(speeds);
+
+// Find Method 
+const jobs = [
+{ title: 'Electrician' },
+{ title: 'Developer' },
+{ title: 'Barista' }
+];
+const devJob = jobs.find(job => job.title === 'Developer');
+console.log(devJob); // { title: 'Developer' }
+
+// Find Activity 
+// An array of posts
+const posts = [
+{ id: 23, title: 'Becoming an ES6 Wizard', body: 'Ille vivere. Ut ad te ...' },
+{ id: 29, title: 'JavaScript Pro Tips', body: 'Pellentesque euismod ...' },
+{ id: 31, title: 'Acing your next JS interview', body: 'Lorem ipsum dolor sitamet...'}
+];
+// Find the post with ID 29
+const currentId = 29;
+const currentPost = posts.find(post => currentId === post.id); // your code here
+console.log(currentPost.title);
+console.log(currentPost.body);
+    </script>
+</body>
+
+</html>

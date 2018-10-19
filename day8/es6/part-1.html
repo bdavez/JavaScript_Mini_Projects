@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6</title>
+</head>
+<body>
+    
+
+    <script>
+// Invoke the function
+function greet(name) {
+    console.log("hello " + name);
+}
+
+// Immediately invoked function
+(function() {
+
+    var name = "billy"
+    greet(name)
+
+})();
+
+// var vs. let 
+for (let i = 0; i < 10; i++) {
+console.log(i); // changes from 0 to 9 as it goes through the loop
+}
+// console.log(i); // i is not defined
+
+// Activity 
+let condition = true;
+
+(function() {
+if (condition) {
+let a = 'Zeta';
+console.log(a); // Zeta
+}
+})();
+// console.log(a); // This should be undefined
+
+// Activity const
+const arr = [1, 2, 3];
+const obj = { id: 0, name: 'Alpha' };
+
+// Modify the array's contents; no reassignment
+arr.push = 4;
+console.log(arr);
+
+// Modify the object's
+obj.rofl = "copter"
+console.log(obj);
+
+// Activity const & let
+const funcs = [];
+for (let i = 0; i < 3; i++) {
+funcs.push(function() {
+console.log(i);
+});
+}
+for (let j = 0; j < funcs.length; j++) {
+funcs[j](); // should output 0, then 1, then 2
+}
+    </script>
+</body>
+</html>

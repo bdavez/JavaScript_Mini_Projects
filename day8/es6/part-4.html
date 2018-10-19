@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// For of Loop
+let array = [2, 3, 4, 1];
+for (let value of array) {
+console.log(value);
+}
+// Output:
+// 2
+// 3
+// 4
+// 1
+
+//Activity ...Rest
+function product(...numbers) {
+return numbers.reduce((currentProduct, number) => currentProduct * number, 1);
+}
+console.log(product(3, 4, 5)); // 60
+console.log(product(3, 4, 5, 6)); // 360
+console.log(product(1, 2, 3, 4, 5, 6)); // 720
+    </script>
+</body>
+</html>
